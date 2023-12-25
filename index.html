@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend BootCamp</title>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#">
+                    <div class="logo">Frontend BootCamp</div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#learn">What You'll Learn</a>
+                    </li>
+                    <li>
+                        <a href="#question">Questions</a>
+                    </li>
+                    <li>
+                        <a href="#instructor">Instructors</a>
+                    </li>
+                </ul>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+
+        </nav>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="grid">
+                <div class="content">
+                    <h1>Become a <span>Web Developer</span></h1>
+                    <p class="text-md">
+                        We focus on teaching our students the fundamentals of the latest and greatest technologies to
+                        prepare them for their first dev role
+                    </p>
+                    <a href="#" class="btn-primary btn-modal" onclick="openPopup()">Start The Enrollment</a>
+                </div>
+                <img src="images/showcase.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- newsletter -->
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="grid">
+                <h1>Sign Up For Our Newsletter</h1>
+                <form>
+                    <input type="text" placeholder="Enter Email">
+                    <a href="#" class="btn-dark">Button</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase -->
+
+    <div class="showcase">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa fa-laptop fa-3x"></i>
+                    </div>
+                    <div class="card-header">
+                        Virtual
+                    </div>
+                    <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Magni placeat sequi
+                        delectus culpa.
+                    </div>
+                    <a href="#" class="btn-primary">Read More</a>
+                </div>
+
+                <div class="card card-bg">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                        <div class="card-header">
+                            Hybrid
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Magni placeat sequi
+                        delectus culpa.
+                    </div>
+                    <a href="#home" class="btn-dark">Read More</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa fa-users fa-3x"></i>
+                        <div class="card-header">
+                            In person
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quaerat. Magni placeat sequi
+                        delectus culpa.
+                    </div>
+                    <a href="#home" class="btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="learning" id="learn">
+        <div class="container">
+            <div class="grid">
+                <div class="learn-img">
+                    <img src="./images/fundamentals.svg" alt="">
+                </div>
+                <div class="grid-container">
+                    <div class="learn-header">Learn The fundamentals</div>
+                    <div class="learn-content">
+                        <div class="text-md">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus quasi omnis!
+                            Eligendi, ipsum sint?
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, illum. Nobis esse, temporibus
+                            tenetur
+                            voluptas officia officiis saepe sunt labore nisi rerum accusamus eaque ipsa velit molestias
+                            placeat
+                            fugit repellat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <i class="fa fa-chevron-right"></i><a href="#home" class="btn-outline">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning react" id="learn">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-container">
+                    <div class="learn-header">Learn Reacts</div>
+                    <div class="learn-content">
+                        <div class="text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus quasi omnis!
+                            Eligendi, ipsum sint?
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, illum. Nobis esse, temporibus
+                            tenetur
+                            voluptas officia officiis saepe sunt labore nisi rerum accusamus eaque ipsa velit molestias
+                            placeat
+                            fugit repellat.</p>
+                    </div>
+                </div>
+                <div class="learn-img">
+                    <img src="./images/react.svg" alt="">
+                </div>
+            </div>
+            <div class="button">
+                <i class="fa fa-chevron-right"></i><a href="#home" class="btn-outline">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="question">
+        <div class="container">
+            <div class="faq-header">Frequently Asked Questions</div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        What Exactly are you located?<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio
+                        perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium
+                        consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos
+                        praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam
+                        distinctio velit.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        How much does it cost to attend?<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio
+                        perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium
+                        consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos
+                        praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam
+                        distinctio velit.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        What do i neet to know?<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio
+                        perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium
+                        consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos
+                        praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam
+                        distinctio velit.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Hod Do i sign up?<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio
+                        perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium
+                        consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos
+                        praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam
+                        distinctio velit.
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Do hou help me find a job?<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae fuga animi distinctio
+                        perspiciatis adipisci velit maiores totam tempora accusamus modi explicabo accusantium
+                        consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad velit doloremque at. Dignissimos
+                        praesentium necessitatibus natus corrupti cum consequatur aliquam! Minima molestias iure quam
+                        distinctio velit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <section class="instructor" id="instructor">
+        <div class="container">
+            <div class="instructor-header">
+                Our Instructors
+            </div>
+            <div class="instructor-content">
+                Our instructors all have 5+ years working as a web developer in the industry
+            </div>
+            <div class="card">
+
+                <div class="cards">
+                    <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+                    <div class="card-header">John Doe</div>
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae aut odit tempora quae
+                        maiores!
+                    </div>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                    <div class="card-header">Jane Doe</div>
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae aut odit tempora quae
+                        maiores!
+                    </div>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                    <div class="card-header">Steve Smith</div>
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae aut odit tempora quae
+                        maiores!
+                    </div>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                    <div class="card-header">Sara Smith</div>
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae aut odit tempora quae
+                        maiores!
+                    </div>
+                    <div class="card-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact">
+        <div class="container">
+            <div class="flex">
+                <div class="contact-info">
+                    <div class="contact-header">Contact Info</div>
+                    <p>Main Location: <span>50 Main st Boston MA</span></p>
+                    <p>Enrollment Phone: <span>(555) 555-5555 </span></p>
+                    <p>Student Phone: <span>(333) 333-3333 </span></p>
+                    <p>Enrollment Email: <span>(555) enroll@frontendbc.test </span></p>
+                    <p>Student Email: <span> student@frontendbc.test </span></p>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.5589712691876!2d-71.06487562471048!3d42.37323743427017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370ed678c5c7b%3A0x1151236a3eb3c8e2!2s50%20Main%20St%2C%20Charlestown%2C%20MA%2002129%2C%20USA!5e0!3m2!1sen!2set!4v1703458560223!5m2!1sen!2set"
+                        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright © 2023 Frontend BootCamp </p>
+    </footer>
+
+    <!-- top -->
+    <a href="#home" class="top">
+        <i class="fa fa-arrow-up fa-2x"></i>
+    </a>
+
+    <!-- Modal -->
+
+    <div class="modal" id="modal">
+        <div class="modal-title">
+            <h2>Modal title</h2>
+            <i class="fa fa-xmark" onclick="closePopup()"></i>
+        </div>
+        <div class="border"></div>
+        <div class="modal-content">
+            <p>Fill out this form and we will get back to you</p>
+        </div>
+        <form>
+            <label>First Name:</label>
+            <input type="text">
+
+            <label>Last Name:</label>
+            <input type="text">
+
+            <label>Email:</label>
+            <input type="text">
+
+            <label>Phone:</label>
+            <input type="text">
+        </form>
+        <div class="border"></div>
+        <div class="btn">
+            <button class="btn-gray" onclick="closePopup()">Close</button>
+            <button class="btn-primary">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

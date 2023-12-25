@@ -1,0 +1,98 @@
+:root {
+    --primary-bg-color: rgb(33, 37, 41);
+    --secondary-bg-color: rgb(13, 110, 253);
+    --button-hover-color: rgb(13, 108, 247);
+    --nav-color: rgba(255, 255, 255, 0.573);
+    --nav-hover-color: rgba(255, 255, 255, 0.571);
+    --bg-color: rgb(108, 117, 125);
+    -btn-hover-color: rgb(41, 45, 48);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    background: var(--primary-bg-color);
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: var(--nav-color);
+}
+
+.header .grid {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.header .content {
+    width: 100%;
+}
+
+.header .content h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+.header .content h1 span {
+    color: rgb(255, 193, 7);
+}
+
+.header img {
+    width: 95%;
+    height: auto;
+}
